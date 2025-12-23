@@ -7,12 +7,23 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=1DB954&center=true&vCenter=true&lines=Loop+Your+Favorite+Spotify+Moments;Precision+A–B+Looping;3D+Interactive+Music+Experience" />
 </p>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Chrome-Extension-green" />
-  <img src="https://img.shields.io/badge/Spotify-Premium%20Required-1DB954" />
-  <img src="https://img.shields.io/badge/License-MIT-blue" />
+  <a href="https://chrome.google.com/webstore" target="_blank">
+    <img src="https://img.shields.io/badge/Chrome-Extension-green" />
+  </a>
+
+  <a href="https://open.spotify.com" target="_blank">
+    <img src="https://img.shields.io/badge/Spotify-Premium%20Required-1DB954" />
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT" target="_blank">
+    <img src="https://img.shields.io/badge/License-MIT-blue" />
+  </a>
 </p>
+
+<a href="https://developer.spotify.com/dashboard" target="_blank">
+  <img src="https://img.shields.io/badge/Spotify-Developer%20API-1DB954" />
+</a>
 
 ---
 
