@@ -1,151 +1,188 @@
-# 🎵 Loopify – Your Personal Spotify Loop Master 🎵
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Loopify – Spotify Loop Master</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ayushap18/Loopify/main/assets/logo.png" width="140" alt="Loopify Logo" />
-</p>
+<style>
+:root{
+  --green:#1DB954;
+  --dark:#0d0d0d;
+  --card:#161616;
+}
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=1DB954&center=true&vCenter=true&lines=Loop+Your+Favorite+Spotify+Moments;Precision+A–B+Looping;3D+Interactive+Music+Experience" />
-</p>
+*{box-sizing:border-box;font-family:Inter,Arial}
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Chrome-Extension-green" />
-  <img src="https://img.shields.io/badge/Spotify-Premium%20Required-1DB954" />
-  <img src="https://img.shields.io/badge/License-MIT-blue" />
-</p>
+body{
+  margin:0;
+  background:radial-gradient(circle at top,#1a1a1a,#000);
+  color:#fff;
+  overflow-x:hidden;
+}
 
----
+/* ===== HERO ===== */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  perspective:1200px;
+}
 
-## 🎯 What is Loopify?
+.hero-card{
+  background:linear-gradient(145deg,#181818,#0f0f0f);
+  border-radius:24px;
+  padding:60px;
+  width:90%;
+  max-width:900px;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+  transform-style:preserve-3d;
+  transition:transform .2s ease;
+}
 
-**Loopify** is a next-generation Chrome extension that allows you to loop **specific sections of Spotify tracks** with **millisecond precision**.  
-It transforms Spotify into an **interactive 3D-like music practice and analysis tool**, letting you repeat, study, and remix your favorite moments effortlessly.
+.hero-card:hover{
+  transform:rotateX(6deg) rotateY(-6deg) scale(1.02);
+}
 
-Whether it’s a guitar solo, chorus drop, vocal run, or transition — **Loopify gives you full control over time itself**.
+.logo{
+  width:120px;
+  margin-bottom:20px;
+}
 
----
+h1{
+  font-size:3rem;
+  margin:10px 0;
+  background:linear-gradient(90deg,var(--green),#9cffc6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
 
-## ✨ Who Is Loopify For?
+.tagline{
+  opacity:.9;
+  margin-bottom:30px;
+}
 
-- 🎸 Musicians practicing difficult passages  
-- 💃 Dancers looping exact choreography counts  
-- 🎤 Singers mastering vocal phrases  
-- 🎧 Music lovers replaying perfect moments  
-- 🎹 Producers analyzing song structure & drops  
-- 📚 Students learning rhythm & composition  
+/* ===== FEATURES ===== */
+.section{
+  padding:100px 10%;
+}
 
----
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
 
-## 🚀 Core Features (Same as Original Loopify)
+.card{
+  background:var(--card);
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.4);
+  transform-style:preserve-3d;
+  transition:all .25s ease;
+}
 
-### 🔁 A–B Looping (Precision Control)
-- Set **Start (A)** and **End (B)** points
-- Millisecond-accurate looping
-- Seamless, gap-free playback
+.card:hover{
+  transform:translateY(-12px) rotateX(4deg);
+  box-shadow:0 40px 80px rgba(0,0,0,.6);
+}
 
-### 🤖 Auto Loop Suggestion (Smart / AI-Inspired)
-- Automatically detects musical sections
-- Suggests rhythm-aligned loop points
-- Ideal for drops, choruses, and bars
+.card h3{
+  color:var(--green);
+  margin-top:0;
+}
 
-### 🎛️ Manual Loop Editor
-- Frame-level precision
-- Real-time playback position tracking
-- Professional-grade control for creators
+/* ===== FOOTER ===== */
+footer{
+  padding:50px;
+  text-align:center;
+  opacity:.8;
+  font-size:.9rem;
+}
+</style>
+</head>
 
-### 🌐 Real-Time Spotify Integration
-- Uses Spotify Web API
-- Live sync with currently playing track
-- Instant seek & playback control
+<body>
 
----
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-card">
+    <img class="logo" src="https://raw.githubusercontent.com/ayushap18/Loopify/main/assets/logo.png" alt="Loopify">
+    <h1>Loopify</h1>
+    <p class="tagline">
+      Your Personal Spotify Loop Master<br>
+      Precision • Control • Immersive 3D Experience
+    </p>
+  </div>
+</div>
 
-## 🎮 3D / Advanced UX Experience
+<!-- FEATURES -->
+<section class="section">
+  <div class="grid">
+    <div class="card">
+      <h3>🎵 A–B Looping</h3>
+      <p>
+        Set precise start and end points with millisecond accuracy.
+        Seamless looping without gaps or delays.
+      </p>
+    </div>
 
-Loopify delivers a **3D-style interactive experience** through:
-- Dynamic real-time updates
-- Smooth looping transitions
-- Visually responsive controls
-- Depth-based interaction feel (time ↔ motion ↔ sound)
+    <div class="card">
+      <h3>🤖 Auto Loop Detection</h3>
+      <p>
+        Smart detection of musical sections like choruses,
+        drops, and bars for instant looping.
+      </p>
+    </div>
 
-This makes Loopify feel **alive**, not static.
+    <div class="card">
+      <h3>🎮 3D Interactive UI</h3>
+      <p>
+        Real-time depth, hover motion, smooth transitions
+        and immersive interaction.
+      </p>
+    </div>
 
----
+    <div class="card">
+      <h3>💾 Loop Library</h3>
+      <p>
+        Save unlimited loops, reuse them anytime,
+        and build custom practice sessions.
+      </p>
+    </div>
 
-## 💾 Loop Library & Memory System
+    <div class="card">
+      <h3>🎧 Spotify Integration</h3>
+      <p>
+        Live sync with Spotify Web Player using official APIs.
+        Premium account required.
+      </p>
+    </div>
 
-- Save unlimited loops per track
-- Restore loops automatically
-- Organize by song, artist, or tags
-- Build custom mixes from multiple songs
-- Reuse practice loops anytime
+    <div class="card">
+      <h3>🎸 For Creators</h3>
+      <p>
+        Musicians, dancers, singers, producers —
+        master your craft with precision looping.
+      </p>
+    </div>
+  </div>
+</section>
 
----
+<!-- FOOTER -->
+<footer>
+  Made with ❤️ for Music Lovers<br>
+  Contact: <b>princejjain566@gmail.com</b><br>
+  © Loopify – MIT License
+</footer>
 
-## 🧠 Real-World Use Cases
+</body>
+</html>
 
-- 🎸 Loop a solo until muscle memory kicks in  
-- 💃 Repeat exact 8-count dance sections  
-- 🎤 Practice vocal runs without rewinding  
-- 🎧 Replay drops endlessly  
-- 🎹 Study transitions & breakdowns  
-- 📚 Learn music theory practically  
 
----
 
-## 🛠️ Installation (Chrome)
-
-1. Clone or download the repository  
-2. Open `chrome://extensions`
-3. Enable **Developer Mode**
-4. Click **Load Unpacked**
-5. Select the Loopify folder
-6. Extension is ready ✅
-
----
-
-## 🔑 Spotify Requirements
-
-### 🎵 Spotify Premium (Mandatory)
-Spotify **Premium** is required because:
-- Playback control APIs need Premium
-- Seeking & looping are restricted on Free accounts
-
-### 🌐 Supported Browsers
-- ✅ Google Chrome  
-- ✅ Edge, Brave, Opera  
-- ❌ Firefox (not supported)
-
----
-
-## 🧩 Technology Stack
-
-- JavaScript (ES6)
-- Chrome Extension APIs
-- Spotify Web API
-- OAuth 2.0 Authentication
-- HTML + CSS (Dark Spotify UI)
-
----
-
-## 🛠️ Troubleshooting
-
-### ❌ Authentication Failed
-- Verify Client ID
-- Check Redirect URI
-- Reload extension
-
-### ❌ No Track Detected
-- Ensure Spotify Web Player is open
-- Play a song
-- Refresh track inside extension
-
-### ❌ Loop Not Working
-- Spotify Premium required
-- Check loop boundaries
-- Reload extension
-
----
 
 ## 🤝 Contributing
 
